@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Text Side by Side</title>
+    <link rel="stylesheet"
+        href="styles.css">
+</head>
+    <style>
+        .container {
+            display: flex; /* Flexbow layout */
+            align-items: center; /* Align items vertically */
+            justify-content: space-between; /* space between the image and text */
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto; /* center the container horizontally */
+            padding: 20;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image {
+            flex: 1; /* adjusts image size */
+            max-width: 50%; /* prevents the image from exceeding half the container */
+            margin-right: 20px;
+        }
+
+        .image img {
+            width: 100%; /* makes the image responsive */
+            height: auto; /* maintains aspect ratio */
+            border-radius: 8px; /* optional: rounded corners for the image */
+        }
+
+        .text {
+            flex: 2; /*adjusts text size relative to the imge */
+        }
+
+        .test h1 {
+            margin-bottom: 16px;
+        }
+
+        .text p {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIP.HLu99uATREB41fqx50grSAAAAA?w=175&h=176&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="fingers image">
+        </div>
+        <div class="text">
+            <h1>Title Goes Here</h1>
+            <p>This is some text on the right side of the container. You can add as much text as you need, and it will stay neatly aligned next to the image.</p>
+            <p>Feel free to style this content further as needed for your layout.</p>
+        </div>
+    </div>
+</body>
+</html>

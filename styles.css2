@@ -1,0 +1,46 @@
+
+body {
+    background-image: url(https://wallpaperboat.com/wp-content/uploads/2019/10/free-website-background-07.jpg);
+    
+}
+
+
+
+.container {
+    display: flex; /* Flexbow layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* space between the image and text */
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto; /* center the container horizontally */
+    padding: 20;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    flex: 1; /* adjusts image size */
+    max-width: 50%; /* prevents the image from exceeding half the container */
+    margin-right: 20px;
+}
+
+.image img {
+    width: 100%; /* makes the image responsive */
+    height: auto; /* maintains aspect ratio */
+    border-radius: 8px; /* optional: rounded corners for the image */
+}
+
+.text {
+    flex: 2; /*adjusts text size relative to the imge */
+}
+
+.test h1 {
+    margin-bottom: 16px;
+}
+
+.text p {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
